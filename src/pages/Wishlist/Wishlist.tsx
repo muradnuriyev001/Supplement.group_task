@@ -22,7 +22,7 @@ const Wishlist = () => {
       <div className={c.wishlist}>
         {!wishlistArray.length ? (
           <div className={c.empty}>
-            <h3>There is no book in wishlist..</h3>
+            <h3>There is no game in wishlist..</h3>
             <Link to={"/shop"}>Go to Shop!</Link>
           </div>
         ) : (

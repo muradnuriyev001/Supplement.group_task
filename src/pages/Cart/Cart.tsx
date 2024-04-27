@@ -21,7 +21,7 @@ const Cart = () => {
       <div className={c.cart}>
         {!cartArray.length ? (
           <div className={c.empty}>
-            <h3>There is no book in cart..</h3>
+            <h3>There is no game in cart..</h3>
             <Link to={"/shop"}>Go to Shop!</Link>
           </div>
         ) : (
