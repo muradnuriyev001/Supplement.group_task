@@ -1,0 +1,47 @@
+.find {
+  margin-bottom: 10px;
+  width: 300px;
+  position: relative;
+  margin-bottom: 20px;
+  input {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid var(--black);
+    border-width: 0px 0px 2px 0px;
+    padding: 0px 10px 10px 0px;
+    width: 300px;
+    position: relative;
+    &:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+  }
+  svg {
+    position: absolute;
+    right: 0;
+    top: 5%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .find {
+    width: 95%;
+    input {
+      width: 95%;
+    }
+    svg {
+      right: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .find {
+    width: 250px;
+    input {
+      width: 250px;
+    }
+  }
+}

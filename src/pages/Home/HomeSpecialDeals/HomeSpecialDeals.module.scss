@@ -1,0 +1,21 @@
+.special_deals {
+  font-family: Jost, sans-serif;
+  text-align: center;
+  background-color: rgb(255, 252, 247);
+  .deal_text {
+    padding-top: 20px;
+    h1 {
+      font-weight: 400;
+    }
+    p {
+      color: var(--orange);
+      font-size: 18px;
+      font-weight: 800;
+      margin-top: 10px;
+    }
+  }
+}
+
+.swiper {
+  padding: 40px 20px;
+}

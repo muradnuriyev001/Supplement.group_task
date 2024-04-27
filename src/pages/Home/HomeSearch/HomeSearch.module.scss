@@ -1,0 +1,53 @@
+.home__banner {
+  background-image: url("../../../assets/Home/Banner/banner.jpg");
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  flex-direction: column;
+  font-family: Jost, sans-serif;
+  text-align: center;
+
+  p:nth-child(1) {
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 10px;
+    letter-spacing: 2px;
+  }
+  .shop
+  {
+    margin-top: 20px;
+  }
+  a {
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 2px;
+    transition: .3s all;
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home__banner {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home__banner {
+    padding-top: 50px;
+  }
+}

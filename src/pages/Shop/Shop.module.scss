@@ -1,0 +1,55 @@
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 200px;
+}
+.banner {
+  background-image: url("../../assets/Blog/blogbg.jpg");
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Jost, sans-serif;
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .shop {
+    padding: 50px 150px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .shop {
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .shop {
+    padding: 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .shop {
+    padding: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .shop {
+    grid-template-columns: 1fr;
+    padding: 50px 75px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .shop {
+    padding: 50px 50px;
+  }
+}

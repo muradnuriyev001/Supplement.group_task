@@ -1,0 +1,70 @@
+.best_sellers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Jost, sans-serif;
+  margin: 20px 0px;
+  h1 {
+    font-weight: 500;
+    padding: 40px 0px;
+    text-align: center;
+    color: var(--orange);
+    text-decoration: underline;
+  }
+}
+
+.books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px 0px;
+  img {
+    border: 2px solid var(--orange);
+    width: 215px !important;
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .books {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .books {
+    grid-template-columns: 1fr 1fr 1fr;
+    img {
+      width: 250px !important;
+      height: 340px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .books {
+    img {
+      width: 220px !important;
+      height: 360px !important;
+    }
+  }
+}
+    
+@media only screen and (max-width: 700px) {
+  .books {
+    grid-template-columns: 1fr 1fr;
+    img {
+      width: 240px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .books {
+    grid-template-columns: 1fr;
+    place-items: center;
+
+    img {
+      width: 100% !important;
+      height: 500px !important;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.subscribe {
+  background-image: url("../../assets/Subscribe/subscribe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin: 20px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Jost, sans-serif;
+  h2 {
+    font-size: 40px;
+    margin-right: 250px;
+    width: 400px;
+    color: var(--white);
+  }
+  form {
+    display: flex;
+  }
+  input {
+    padding: 20px 100px 20px 10px;
+    width: 500px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      background-color: orangered;
+    }
+    p {
+      font-size: 15px;
+    }
+    svg {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .subscribe {
+    h2 {
+      margin-right: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .subscribe {
+    h2 {
+      margin-right: 100px;
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .subscribe {
+    margin: 20px 100px;
+    h2 {
+      margin-right: 50px;
+    }
+    input {
+      width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .subscribe {
+    padding: 0px 20px;
+    margin: 20px 50px;
+    h2 {
+      margin-right: 20px;
+      font-size: 30px;
+    }
+    input {
+      width: 200px;
+      padding: 20px 80px 20px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .subscribe {
+    flex-direction: column;
+    padding: 0px 20px;
+    h2 {
+      margin-right: 0px;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .subscribe {
+    margin: 20px 10px;
+    h2 {
+      font-size: 20px;
+    }
+    input {
+      padding: 20px 50px 20px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .subscribe {
+    h2 {
+      font-size: 20px;
+      width: 100%;
+    }
+    button {
+      padding: 10px;
+
+      p {
+        font-size: 12px;
+      }
+      svg {
+        font-size: 15px;
+      }
+    }
+  }
+}

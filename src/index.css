@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  color: var(--orange);
+}
+
+:root {
+  --warm-white: #f2ede3;
+  --warm-white2: #f1ede2;
+  --white: #fafaf7;
+  --gray: #efefea;
+  --gray2: #242424cc;
+  --black: #242424;
+  --orange: #eb5e37;
+
+  --swiper-pagination-color: var(--gray2);
+}
+
+::selection {
+  color: var(--orange);
+  background-color: var(--black);
+}
+
+/* Scrollbar settings*/
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7f00;
+}
+
+/* Swiper settings*/
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 50%;
+  margin-top: -60px !important;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: var(--black);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px;
+}
+
+.swiper-button-prev::after {
+  margin-right: 4px;
+}

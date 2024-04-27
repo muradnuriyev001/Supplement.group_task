@@ -1,0 +1,32 @@
+.notfound {
+  display: grid;
+  place-items: center;
+
+  font-family: Jost, sans-serif;
+  p {
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  a {
+    background-color: var(--orange);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 800;
+    &:hover {
+      background-color: var(--warm-white);
+      color: var(--orange);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .notfound {
+    margin-top: 150px;
+    img {
+      width: 75%;
+    }
+  }
+}
